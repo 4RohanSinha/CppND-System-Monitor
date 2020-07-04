@@ -20,9 +20,9 @@ int Process::Pid() { return pid_; }
 float Process::CpuUtilization() { 
 	long total = LinuxParser::ActiveJiffies(pid_); //get total jiffies for PID from LinuxParser
 
-	float seconds = UpTime(); //get uptime of process
+	float uptimeProc = UpTime(); //get uptime of process
 	
-	cpu_util_ = (float) ((1.0 * total)/sysconf(_SC_CLK_TCK)/seconds); //calculate CPU util based on the previous values
+	cpu_util_ = (float) ((1.0 * total)/sysconf(_SC_CLK_TCK)/uptimeProc); //calculate CPU util based on the previous values
 	//cpu_util_ is a private member variable for Process
 
 	return cpu_util_; //return cpu_util_

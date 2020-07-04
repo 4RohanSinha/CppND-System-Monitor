@@ -32,10 +32,10 @@ Processor& System::Cpu() { return cpu_; }
 vector<Process>& System::Processes() {
 	processes_.clear(); //clear the processes list so that this method can update them (if a process ended for example)
 
-	std::vector<int> pids = LinuxParser::Pids(); //get the new PIDs
+	std::vector<int> pidsInts = LinuxParser::Pids(); //get the new PIDs
 	
 	//iterate through these PIDs
-	for (int i: pids) {
+	for (int i: pidsInts) {
 		Process curProc(i); //create new process for each PID
 		processes_.emplace_back(curProc); //move them to the processes_ vector
 	}

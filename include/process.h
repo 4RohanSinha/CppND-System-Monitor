@@ -7,7 +7,6 @@ Basic class for Process representation
 It contains relevant attributes as shown below
 */
 class Process {
- friend class System;
  public:
   Process() {}
   Process(int& pid) : pid_(pid) { CpuUtilization(); }
