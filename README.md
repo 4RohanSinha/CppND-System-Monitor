@@ -6,7 +6,7 @@ The content below contains the instructions for completing the project.
 
 Follow along with the classroom lesson to complete the project!
 
-![System Monitor](C++ System Monitor.png)
+![System Monitor](C++\ System\ Monitor.png)
 
 ## Udacity Linux Workspace
 [Udacity](https://www.udacity.com/) provides a browser-based Linux [Workspace](https://engineering.udacity.com/creating-a-gpu-enhanced-virtual-desktop-for-udacity-497bdd91a505) for students. 
