@@ -4,8 +4,6 @@ My implementation for System Monitor Project in the Object Oriented Programming 
 
 The content below contains the instructions for completing the project.
 
-Follow along with the classroom lesson to complete the project!
-
 ![System Monitor](C++_System_Monitor.png)
 
 ## Udacity Linux Workspace
